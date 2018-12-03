@@ -17,7 +17,7 @@ public class MFU {
         executorService = Executors.newFixedThreadPool(2);
     }
     public void start() { //запуск принтера и сканера
-        bStop = false;;
+        bStop = false;
         executorService.execute(new Runnable() {
             public void run() {
                 while(!bStop) {
